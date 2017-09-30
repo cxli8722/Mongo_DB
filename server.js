@@ -53,7 +53,7 @@ app.get("/scrape", function(req, res) {
 
     var $ = cheerio.load(html);
 
-    $("p.title").each(function(i, element) {
+    $("h2.story-heading").each(function(i, element) {
 
 
       var result = {};
